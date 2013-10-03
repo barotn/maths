@@ -59,7 +59,7 @@
 		</p>
 		</div>
 
-		<div class="content">
+		<!-- <div class="content">
 			<h4 id="multiplication">Multiplication</h4>
 			<p>
 			<?php
@@ -106,7 +106,7 @@
 			echo "</br>";
 			?>
 		</p>
-		</div>
+		</div> -->
 <div class="contentbroad">
 	<h4 id="lhorder">Ordering</h4>
 		<p><h5 style="border-bottom: 1px solid black">Order following numbers from Lowest to Highest</h5>
@@ -115,7 +115,8 @@
 		$reslhorder=array();
 			echo "<br>Question 1. ";
 			for ($a=1; $a<=5; $a++) {
-				$lho1 = rand(11111,55555);
+				$lho1 = round(rand(10000.0000,99999.0000)/1000,3);
+				//<!-- rand(11111,55555); -->
 				?>
 				<?php echo ("   "); echo "  $lho1 ";
 				array_push($reslhorder, $lho1);
@@ -133,7 +134,8 @@
 		$reshlorder=array();
 			echo "<br>Question 1. ";
 			for ($a=1; $a<=5; $a++) {
-				$hlo1 = rand(11111,55555);
+				$hlo1 = round(rand(10000.0000,99999.0000)/1000,3);
+				//<!-- $hlo1 = rand(11111,55555); -->
 				?>
 				<?php echo "   " . " $hlo1 ";
 				array_push($reshlorder, $hlo1);

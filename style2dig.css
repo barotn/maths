@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h3{
+  text-align: center;
+  margin: 5px;
+}
+body {
+  border: 1px solid black;
+	margin-top:20px;
+  margin-left: 200px;
+	width: 710px;
+  height: 1122px;
+}
+div {
+	border: .5px solid black;
+}
+
+#eachblock{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 114px;
+	border-radius: 10%;
+	margin: 5px;
+	text-align: left;
+	padding-top: 10px ;
+	padding-left: -30px;
+	font-family: Times Arial Sans-serif Verdana Courier Garamond Serif ;
+	border: 1px solid #FFFFFF;
+	color: #000000;
+	/*color: #9C671E;*/
+	font-weight: normal;
+}
+.content{
+  display: inline-block;
+  margin-top: 0.1em;
+  margin-left: 1.2em;
+  text-align: center;
+  width: 650px;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: Times Arial Verdana sans-serif ;
+}
+.contentbroad {
+  display: inline-block;
+	margin: 2px;
+  width: 700px;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: Arial Verdana sans-serif ;
+}
+.answers {
+  display: inline-block;
+  margin-top: 0.1em;
+  margin-left: 1.2em;
+  text-align: center;
+  width: 650px;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: Times Arial Verdana sans-serif ;
+}
+#addition{
+	text-align: center;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 20px;
+  font-family: Garamond Arial verdana sans-serif;
+  border: 1px solid black;
+}
+#subtraction{
+	text-align: center;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 20px;
+  font-family: Garamond Arial verdana sans-serif;
+  border: 1px solid black;
+}
+#multiplication{
+	text-align: center;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 20px;
+  font-family: Garamond Arial verdana sans-serif;
+  border: 1px solid black;
+}
+#division{
+	text-align: center;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 20px;
+  font-family: Garamond Arial verdana sans-serif;
+  border: 1px solid black;
+}
+#lhorder{
+	text-align: center;
+  margin: 5px;
+	width: 602x;
+  padding: 5px 10px 5px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 20px;
+  font-family: Garamond Arial verdana sans-serif;
+  border: 1px solid black;
+}
+div p {
+	margin-top: 10px;
+	margin-left: 10px;
+	
+}
+
+/*.subtraction {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-family: Arial Verdana sans-serif ;
+  border: 1px dashed black;
+}
+
+.friend {
+  border: 2px dashed green;
+}
+
+.family {
+  border: 2px dashed blue;
+}
+
+.enemy {
+  border: 2px dashed radiused;
+}
+
+#best_friend {
+  border: 4px solid #00C957;
+}
+
+#archnemesis {
+  border: 4px solid #cc0000;
+}
+*/
