@@ -10,35 +10,35 @@
 	<!-- <div class="date"><?php echo  "$date" ?></div> -->
 	<br>
 		<div class="content">
-			<h4 id="addition">Addition</h4>
+			<h4 id="addition">Multiplication</h4>
 			<p>
 			<?php
-			global $resadd1;
-			$resadd1=array();
-			function addition($a1, $a2)
+			global $resmul1;
+			$resmul1=array();
+			function multiplication($a1, $a2)
 			{
-			  global $sum;
-			  $sum = $a1 + $a2;
-			  return $sum;
-			//  echo $sum + "\n";
+			  global $mul1;
+			  $mul1 = $a1 * $a2;
+			  return $mul1;
+			//  echo $mul1 + "\n";
 			}
 			//for ($j=1; $j<=5; $j++) {
 			for  ($i=1; $i<=20; $i++) {
 					$a1 = rand(11,99);
-					$a2 = rand(10,99);
+					$a2 = rand(1,9);
 					?>
 					<div id="eachblock">
 					<?php echo "(" . $i . ")" ?>
 					<?php echo "<h4 style='padding-left:35px;letter-spacing: 0.2em;'>$a1</h4>";?> 
-					<?php echo "<h4 style='padding-left:22px'> +" ;?>
-					<?php echo "<h4 style='padding-left:35px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
+					<?php echo "<h4 style='padding-left:22px'> x" ;?>
+					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
 					<?php echo "_________</br>" ;?>
 					<?php echo "<br>_________</br>" ;?>
 
 					</div>
 					<?php		
-					addition($a1, $a2);
-					array_push($resadd1, $sum);
+					multiplication($a1, $a2);
+					array_push($resmul1, $mul1);
 				}
 			//}
 			echo "</br></br>";
@@ -64,17 +64,17 @@ function dispans($arrayres){
 <br>
 <div class="answers">
 	<?php
-	echo "<h3> Answers for Addition </h3> ";
-	$arrayres=$resadd1;
-	dispans($arrayres);echo "</br>";	
+	// echo "<h3> Answers for Addition </h3> ";
+	// $arrayres=$resadd1;
+	// dispans($arrayres);echo "</br>";	
 
 	// echo "<h5> Answers for Subtraction</h5> ";
 	// $arrayres=$ressub1;
 	// dispans($arrayres);echo "</br>";
 
-	// echo "<h5> Answers for Multiplication</h5> ";
-	// $arrayres=$resmul1;
-	// dispans($arrayres);echo "</br>";
+	echo "<h5> Answers for Multiplication</h5> ";
+	$arrayres=$resmul1;
+	dispans($arrayres);echo "</br>";
 
 	// echo "<h5> Answers for Division</h5> ";
 	// $arrayres=$resdiv1;
