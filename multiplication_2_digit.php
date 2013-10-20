@@ -52,7 +52,7 @@ function dispans($arrayres){
 	$i=1;
 	foreach ($arrayres as $value)
 	{
-		echo "(" . $i . ")  = " . $value . ", ";
+		echo "(" . $i . ")  = " . "<strong>$value</strong>" . ", ";
 		$i++;
 	}
 	echo str_replace('Array','',print_r($arrayfinal,true));
@@ -60,8 +60,9 @@ function dispans($arrayres){
 }
 ?>
 
-<br><hr width="100%">
-<br>
+<br><br>
+<hr width="100%">
+<br><br>
 <div class="answers">
 	<?php
 	// echo "<h3> Answers for Addition </h3> ";
@@ -72,7 +73,7 @@ function dispans($arrayres){
 	// $arrayres=$ressub1;
 	// dispans($arrayres);echo "</br>";
 
-	echo "<h5> Answers for Multiplication</h5> ";
+	echo "<h3> Answers for Multiplication</h3> ";
 	$arrayres=$resmul1;
 	dispans($arrayres);echo "</br>";
 

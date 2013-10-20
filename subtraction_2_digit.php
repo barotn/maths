@@ -28,9 +28,9 @@
 					$a2 = rand(11,50);
 					?>
 					<div id="eachblock">
-					
+					<?php echo "(" . $i . ")" ?>
 					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a1</h4>";?> 
-					<?php echo "(" . $i . ")<br style='float:left'> _" ;?>
+					<?php echo "<h4 style='padding-left:22px'> _" ;?>
 					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
 					<?php echo "_________</br>" ;?>
 					<?php echo "<br>_________</br>" ;?>
@@ -53,15 +53,17 @@ function dispans($arrayres){
 	foreach ($arrayres as $value)
 	{
 	  // $arrayfinal[$i] = $value;
-	  echo "(" . $i . ")  = " . $value . ", ";
+	  echo "(" . $i . ")  = " . "<strong>$value</strong>". ", ";
 	  $i++;
 	}
 	echo str_replace('Array','',print_r($arrayfinal,true));
 	echo "</br>";
 }
 ?>
-	<br><br><br><br><br><br><br><br><br><br><br>
 
+<br><br>
+<hr width="100%">
+<br><br>
 <div class="answers">
 	<?php
 	// echo "<h5>Answers for Addition</h5> ";

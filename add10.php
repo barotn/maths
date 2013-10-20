@@ -4,6 +4,7 @@
 	<link type="text/css" rel="stylesheet" href="styleadd10.css"/>
 </head>
 <body><?php
+
 	$date=date("F j, Y, g:i a");?>
 	<h3>Welcome to world of maths <?php echo  "<br>"."$date" ?></h3>
 	<!-- <div class="date"><?php echo  "$date" ?></div> -->
@@ -27,9 +28,9 @@
 					$a2 = rand(10,99);
 					?>
 					<div id="eachblock">
-					
+					<?php echo "(" . $i . ")";?> 
 					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a1</h4>";?> 
-					<?php echo "(" . $i . ")<br style='float:left'> +" ;?>
+					<?php echo "<h4 style='padding-left:30px'> +" ;?>
 					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
 					<?php echo "_________</br>" ;?>
 					<?php echo "<br>_________</br>" ;?>
@@ -51,8 +52,8 @@ function dispans($arrayres){
 	$i=1;
 	foreach ($arrayres as $value)
 	{
-	  $arrayfinal[$i] = $value;
-		$i++;
+	  echo "(" . $i . ")  = " . "<strong>$value</strong>". ", ";
+	  $i++;
 	}
 	echo str_replace('Array','',print_r($arrayfinal,true));
 	echo "</br>";
@@ -60,7 +61,7 @@ function dispans($arrayres){
 ?>
 <div class="answers">
 	<?php
-	echo "<h5>Answers for Addition</h5> ";
+	echo "<h3>Answers for Addition</h3> ";
 	$arrayres=$resadd1;
 	dispans($arrayres);echo "</br>";	
 
