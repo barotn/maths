@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title></title>
-	<link type="text/css" rel="stylesheet" href="style3dig.css"/>
+	<link type="text/css" rel="stylesheet" href="style2dig.css"/>
 </head>
 <body><?php
 	$date=date("F j, Y, g:i a");?>
@@ -26,7 +26,7 @@
 			}
 			//for ($j=1; $j<=5; $j++) {
 			for  ($i=1; $i<=8; $i++) {
-					$a1 = rand(101,999);
+					$a1 = rand(11,99);
 					$a2 = rand(1,9);
 					global $divr1;
 					$divr1 = $a1 % $a2;

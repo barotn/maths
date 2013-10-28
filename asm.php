@@ -27,14 +27,13 @@ Addition, Subtraction, Multiplication SUMS</title>
 			<li><a href="./2digits/addition_2_digit.php" target="_blank">Two digit Addition</a></li>
 			<li><a href="./2digits/subtraction_2_digit.php" target="_blank">Two digit Subtraction</a></li>
 			<li><a href="./2digits/multiplication_2_digit.php" target="_blank">Two digit Multiplication</a></li>
-			<li><a href="./2digits/division_2_digit.php" target="_blank">Two digit Division</a></li>
 		</ol>
 		<p>Three digits Addition, Subtraction, Multiplication sums.</p>
 		<ol>
 			<li><a href="./3digits/addition_3_digit.php" target="_blank">Three digit Addition</a></li>
 			<li><a href="./3digits/subtraction_3_digit.php" target="_blank">Three digit Subtraction</a></li>
 			<li><a href="./3digits/multiplication_3_digit.php" target="_blank">Three digit Multiplication</a></li>
-			<li><a href="./3digits/division_3_digit.php" target="_blank">Three digit Division</a></li>
+			<li><a href="./3digits/multiplication_3_digit.php" target="_blank">Three digit Division</a></li>
 		</ol>
 	</div>
 
