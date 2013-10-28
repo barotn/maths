@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title></title>
-	<link type="text/css" rel="stylesheet" href="style2dig.css"/>
+	<link type="text/css" rel="stylesheet" href="style3dig.css"/>
 </head>
 <body><?php
 	$date=date("F j, Y, g:i a");?>
@@ -10,38 +10,38 @@
 	<!-- <div class="date"><?php echo  "$date" ?></div> -->
 	<br>
 		<div class="content">
-			<h4 id="subtraction">Subtraction</h4>
+			<h4 id="addition">Addition</h4>
 			<p>
 			<?php
-			global $ressub1;
-			$ressub1=array();
-			function subtraction($a1, $a2)
+			global $resadd1;
+			$resadd1=array();
+			function addition($a1, $a2)
 			{
-			  global $sub;
-			  $sub = $a1 - $a2;
-			  return $sub;
+			  global $sum;
+			  $sum = $a1 + $a2;
+			  return $sum;
 			//  echo $sum + "\n";
 			}
 			//for ($j=1; $j<=5; $j++) {
 			for  ($i=1; $i<=20; $i++) {
-					$a1 = rand(51,99);
-					$a2 = rand(11,50);
+					$a1 = rand(100,999);
+					$a2 = rand(100,999);
 					?>
 					<div id="eachblock">
 					<?php echo "(" . $i . ")" ?>
-					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a1</h4>";?> 
-					<?php echo "<h4 style='padding-left:22px'> _" ;?>
-					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
+					<?php echo "<h4 style='padding-left:40px;letter-spacing: 0.2em;'>$a1</h4>";?> 
+					<?php echo "<h4 style='padding-left:20px'> +" ;?>
+					<?php echo "<h4 style='padding-left:41px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
 					<?php echo "_________</br>" ;?>
 					<?php echo "<br>_________</br>" ;?>
 
 					</div>
 					<?php		
-					subtraction($a1, $a2);
-					array_push($ressub1, $sub);
+					addition($a1, $a2);
+					array_push($resadd1, $sum);
 				}
 			//}
-			echo "</br></br>";
+			echo "</br>";
 			?>
 		</p>
 		</div>
@@ -52,9 +52,8 @@ function dispans($arrayres){
 	$i=1;
 	foreach ($arrayres as $value)
 	{
-	  // $arrayfinal[$i] = $value;
-	  echo "(" . $i . ")  = " . "<strong>$value</strong>". ", ";
-	  $i++;
+		echo "(" . $i . ")  = " . "<strong>$value</strong>" . ", ";
+		$i++;
 	}
 	// echo str_replace('Array','',print_r($arrayfinal,true));
 	echo "</br>";
@@ -66,13 +65,13 @@ function dispans($arrayres){
 <br><br>
 <div class="answers">
 	<?php
-	// echo "<h5>Answers for Addition</h5> ";
-	// $arrayres=$resadd1;
-	// dispans($arrayres);echo "</br>";	
+	echo "<h3> Answers for Addition </h3> ";
+	$arrayres=$resadd1;
+	dispans($arrayres);echo "</br>";	
 
-	echo "<h3> Answers for Subtraction </h3> ";
-	$arrayres=$ressub1;
-	dispans($arrayres);echo "</br>";
+	// echo "<h5> Answers for Subtraction</h5> ";
+	// $arrayres=$ressub1;
+	// dispans($arrayres);echo "</br>";
 
 	// echo "<h5> Answers for Multiplication</h5> ";
 	// $arrayres=$resmul1;

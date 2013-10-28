@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title></title>
-	<link type="text/css" rel="stylesheet" href="style2dig.css"/>
+	<link type="text/css" rel="stylesheet" href="style3dig.css"/>
 </head>
 <body><?php
 	$date=date("F j, Y, g:i a");?>
@@ -24,14 +24,14 @@
 			}
 			//for ($j=1; $j<=5; $j++) {
 			for  ($i=1; $i<=20; $i++) {
-					$a1 = rand(51,99);
-					$a2 = rand(11,50);
+					$a1 = rand(501,999);
+					$a2 = rand(100,500);
 					?>
 					<div id="eachblock">
 					<?php echo "(" . $i . ")" ?>
-					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a1</h4>";?> 
-					<?php echo "<h4 style='padding-left:22px'> _" ;?>
-					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
+					<?php echo "<h4 style='padding-left:40px;letter-spacing: 0.2em;'>$a1</h4>";?> 
+					<?php echo "<h4 style='padding-left:20px'> _" ;?>
+					<?php echo "<h4 style='padding-left:41px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
 					<?php echo "_________</br>" ;?>
 					<?php echo "<br>_________</br>" ;?>
 

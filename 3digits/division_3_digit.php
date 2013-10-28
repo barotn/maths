@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title></title>
-	<link type="text/css" rel="stylesheet" href="style2dig.css"/>
+	<link type="text/css" rel="stylesheet" href="style3dig.css"/>
 </head>
 <body><?php
 	$date=date("F j, Y, g:i a");?>
@@ -10,35 +10,39 @@
 	<!-- <div class="date"><?php echo  "$date" ?></div> -->
 	<br>
 		<div class="content">
-			<h4 id="addition">Multiplication</h4>
+			<h4 id="addition">Division</h4>
 			<p>
 			<?php
-			global $resmul1;
-			$resmul1=array();
-			function multiplication($a1, $a2)
+
+			global $resdiv1;
+			$resdiv1=array();
+			function division($a1, $a2)
 			{
-			  global $mul1;
-			  $mul1 = $a1 * $a2;
-			  return $mul1;
+			  global $div1;
+			  $div1 = $a1 / $a2;
+			  return $div1;
+			  
 			//  echo $mul1 + "\n";
 			}
 			//for ($j=1; $j<=5; $j++) {
-			for  ($i=1; $i<=20; $i++) {
-					$a1 = rand(11,99);
+			for  ($i=1; $i<=8; $i++) {
+					$a1 = rand(101,999);
 					$a2 = rand(1,9);
+					global $divr1;
+					$divr1 = $a1 % $a2;
 					?>
-					<div id="eachblock">
+					<div id="divisionblock">
 					<?php echo "(" . $i . ")" ?>
-					<?php echo "<h4 style='padding-left:35px;letter-spacing: 0.2em;'>$a1</h4>";?> 
-					<?php echo "<h4 style='padding-left:22px'> x" ;?>
-					<?php echo "<h4 style='padding-left:45px;letter-spacing: 0.2em;'>$a2</h4>" ;?>
-					<?php echo "_________</br>" ;?>
-					<?php echo "<br>_________</br>" ;?>
+					<?php echo "<p style='padding-left:35px'>________";?>
+					<?php echo "<h4 style='padding-left:35px;letter-spacing: 0.2em;'>$a2 " . "|" . " $a1</h4>";?> 
+
+					<?php echo "</br></br></br></br></br></br></br></br>"  . "R" . "$divr1";?>
 
 					</div>
 					<?php		
-					multiplication($a1, $a2);
-					array_push($resmul1, $mul1);
+					division($a1, $a2);
+					$div1 = round($div1, 0);
+					array_push($resdiv1, $div1);
 				}
 			//}
 			echo "</br></br>";
@@ -69,19 +73,18 @@ function dispans($arrayres){
 	// $arrayres=$resadd1;
 	// dispans($arrayres);echo "</br>";	
 
-	// echo "<h5> Answers for Subtraction</h5> ";
+	// echo "<h3> Answers for Subtraction</h3> ";
 	// $arrayres=$ressub1;
 	// dispans($arrayres);echo "</br>";
 
-	echo "<h3> Answers for Multiplication</h3> ";
-	$arrayres=$resmul1;
-	dispans($arrayres);echo "</br>";
-
-	// echo "<h5> Answers for Division</h5> ";
-	// $arrayres=$resdiv1;
+	// echo "<h3> Answers for Multiplication</h3> ";
+	// $arrayres=$resmul1;
 	// dispans($arrayres);echo "</br>";
 
-	
+	echo "<h3> Answers for Division</h3> ";
+	$arrayres=$resdiv1;
+	dispans($arrayres);echo "</br>";
+
 	?>
 </div>
 </body>

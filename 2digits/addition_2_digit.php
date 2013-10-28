@@ -55,7 +55,7 @@ function dispans($arrayres){
 		echo "(" . $i . ")  = " . "<strong>$value</strong>" . ", ";
 		$i++;
 	}
-	echo str_replace('Array','',print_r($arrayfinal,true));
+	// echo str_replace('Array','',print_r($arrayfinal,true));
 	echo "</br>";
 }
 ?>
